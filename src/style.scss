@@ -1,0 +1,259 @@
+$font1: "Coda", cursive;
+$font2: "Roboto Condensed", sans-serif;
+$font3: "Roboto Mono", monospace;
+
+$colour1: #1a1110;
+$colour2: #f8f8f8;
+$colour3: #6a5acd;
+$colour4: #ffd700;
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px $colour3;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px $colour1;
+  background-color: $colour3;
+  border-radius: 7px;
+}
+
+* {
+  box-sizing: border-box;
+  color: $colour2;
+  font-family: $font2;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+.app {
+  background-image: url("./media/wallpaper.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: $colour3;
+  color: $colour2;
+  display: flex;
+  height: 7vh;
+  justify-content: space-between;
+  padding: 7px 3%;
+  .nav-brand {
+    display: flex;
+    .nav-logo,
+    .nav-title {
+      font-size: 28px;
+    }
+    .nav-title {
+      color: $colour2;
+      font-family: $font1;
+    }
+    .nav-logo {
+      color: $colour4;
+    }
+  }
+  .nav-links {
+    display: flex;
+    .nav-link {
+      color: $colour2;
+      font-size: 21px;
+    }
+  }
+}
+
+.search {
+  height: 21vh;
+  padding: 0 3%;
+  .form {
+    display: flex;
+    flex-direction: column;
+    .input,
+    .button {
+      font-size: 21px;
+    }
+    .input {
+      color: $colour1;
+      margin: 6px 0;
+    }
+    .button {
+      background-color: $colour3;
+      border-color: $colour4;
+      color: $colour2;
+      cursor: pointer;
+      font-family: $font3;
+    }
+  }
+  .clear-button {
+    background-color: $colour4;
+    border-color: $colour3;
+    border-width: 4px;
+    color: $colour3;
+    cursor: pointer;
+    font-family: $font3;
+    font-size: 21px;
+    margin: 2px 0;
+    width: 100%;
+  }
+}
+
+.landing {
+  padding-top: 70px;
+  text-align: center;
+  .landing-arrow {
+    color: $colour4;
+    font-size: 140px;
+  }
+  .landing-subtitle {
+    color: $colour2;
+    font-size: 28px;
+    span {
+      color: $colour3;
+      font-family: $font1;
+      font-size: 42px;
+    }
+  }
+}
+
+.about {
+  color: $colour2;
+  padding: 14px 3%;
+  .about-title {
+    font-size: 42px;
+  }
+}
+
+.user-item {
+  background-color: rgba(106, 90, 205, 0.9);
+  border: 2px solid $colour4;
+  border-radius: 21px;
+  height: 297px;
+  margin: 21px 7px 0;
+  padding: 14px 7px;
+  text-align: center;
+  width: 280px;
+
+  .user-item-image {
+    border-radius: 50%;
+    height: 140px;
+  }
+  .user-item-name {
+    font-family: $font1;
+    font-size: 29px;
+  }
+  .user-item-button {
+    background-color: $colour4;
+    border: none;
+    width: 180px;
+    a {
+      color: $colour3;
+      font-family: $font3;
+      font-size: 18px;
+    }
+  }
+}
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  height: 72vh;
+  margin-left: 3%;
+  overflow-y: scroll;
+}
+
+.single-user {
+  padding: 21px 3%;
+  .lead-box {
+    display: grid;
+    grid-template-columns: 210px auto;
+    height: 210px;
+    .img-box {
+      position: relative;
+      .single-user-image {
+        height: 210px;
+      }
+      .img-details-box {
+        background-color: rgba(26, 17, 16, 0.6);
+        left: 0;
+        padding: 6px;
+        position: absolute;
+        top: 0;
+        .single-user-login {
+          color: $colour4;
+        }
+        .single-user-location {
+          font-style: italic;
+        }
+      }
+    }
+    .details-box {
+      padding: 0 6px;
+      .single-user-name {
+        color: $colour4;
+        font-family: $font1;
+        font-size: 28px;
+      }
+    }
+  }
+  .repo-title {
+    font-size: 28px;
+    padding: 12px;
+  }
+  .repos {
+    max-height: 42vh;
+    overflow-y: scroll;
+    .repo-item {
+      border: 1px solid $colour2;
+      margin: 7px;
+      padding: 14px;
+    }
+  }
+}
+
+.loader {
+  margin: 0 auto;
+}
+
+.error {
+  background-color: rgba(26, 17, 16, 0.7);
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  .error-modal {
+    background-color: $colour2;
+    border: 3px solid $colour3;
+    border-radius: 42px;
+    margin: 180px auto;
+    padding: 21px;
+    text-align: center;
+    width: 280px;
+    .error-logo {
+      color: red;
+      font-size: 70px;
+    }
+    .error-text {
+      color: $colour1;
+      font-size: 28px;
+      font-weight: bold;
+      margin: 14px 0;
+    }
+    .error-button {
+      background-color: $colour3;
+      border: none;
+      color: $colour2;
+      cursor: pointer;
+      font-family: $font3;
+      font-size: 18px;
+      padding: 14px;
+    }
+  }
+}

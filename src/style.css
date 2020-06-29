@@ -1,0 +1,303 @@
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #6a5acd;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px #1a1110;
+  background-color: #6a5acd;
+  border-radius: 7px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #f8f8f8;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+.app {
+  background-image: url("./media/wallpaper.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: #6a5acd;
+  color: #f8f8f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 7vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 7px 3%;
+}
+
+.navbar .nav-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .nav-brand .nav-logo,
+.navbar .nav-brand .nav-title {
+  font-size: 28px;
+}
+
+.navbar .nav-brand .nav-title {
+  color: #f8f8f8;
+  font-family: "Coda", cursive;
+}
+
+.navbar .nav-brand .nav-logo {
+  color: #ffd700;
+}
+
+.navbar .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .nav-links .nav-link {
+  color: #f8f8f8;
+  font-size: 21px;
+}
+
+.search {
+  height: 21vh;
+  padding: 0 3%;
+}
+
+.search .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search .form .input,
+.search .form .button {
+  font-size: 21px;
+}
+
+.search .form .input {
+  color: #1a1110;
+  margin: 6px 0;
+}
+
+.search .form .button {
+  background-color: #6a5acd;
+  border-color: #ffd700;
+  color: #f8f8f8;
+  cursor: pointer;
+  font-family: "Roboto Mono", monospace;
+}
+
+.search .clear-button {
+  background-color: #ffd700;
+  border-color: #6a5acd;
+  border-width: 4px;
+  color: #6a5acd;
+  cursor: pointer;
+  font-family: "Roboto Mono", monospace;
+  font-size: 21px;
+  margin: 2px 0;
+  width: 100%;
+}
+
+.landing {
+  padding-top: 70px;
+  text-align: center;
+}
+
+.landing .landing-arrow {
+  color: #ffd700;
+  font-size: 140px;
+}
+
+.landing .landing-subtitle {
+  color: #f8f8f8;
+  font-size: 28px;
+}
+
+.landing .landing-subtitle span {
+  color: #6a5acd;
+  font-family: "Coda", cursive;
+  font-size: 42px;
+}
+
+.about {
+  color: #f8f8f8;
+  padding: 14px 3%;
+}
+
+.about .about-title {
+  font-size: 42px;
+}
+
+.user-item {
+  background-color: rgba(106, 90, 205, 0.9);
+  border: 2px solid #ffd700;
+  border-radius: 21px;
+  height: 297px;
+  margin: 21px 7px 0;
+  padding: 14px 7px;
+  text-align: center;
+  width: 280px;
+}
+
+.user-item .user-item-image {
+  border-radius: 50%;
+  height: 140px;
+}
+
+.user-item .user-item-name {
+  font-family: "Coda", cursive;
+  font-size: 29px;
+}
+
+.user-item .user-item-button {
+  background-color: #ffd700;
+  border: none;
+  width: 180px;
+}
+
+.user-item .user-item-button a {
+  color: #6a5acd;
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+}
+
+.users {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 72vh;
+  margin-left: 3%;
+  overflow-y: scroll;
+}
+
+.single-user {
+  padding: 21px 3%;
+}
+
+.single-user .lead-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 210px auto;
+      grid-template-columns: 210px auto;
+  height: 210px;
+}
+
+.single-user .lead-box .img-box {
+  position: relative;
+}
+
+.single-user .lead-box .img-box .single-user-image {
+  height: 210px;
+}
+
+.single-user .lead-box .img-box .img-details-box {
+  background-color: rgba(26, 17, 16, 0.6);
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: 0;
+}
+
+.single-user .lead-box .img-box .img-details-box .single-user-login {
+  color: #ffd700;
+}
+
+.single-user .lead-box .img-box .img-details-box .single-user-location {
+  font-style: italic;
+}
+
+.single-user .lead-box .details-box {
+  padding: 0 6px;
+}
+
+.single-user .lead-box .details-box .single-user-name {
+  color: #ffd700;
+  font-family: "Coda", cursive;
+  font-size: 28px;
+}
+
+.single-user .repo-title {
+  font-size: 28px;
+  padding: 12px;
+}
+
+.single-user .repos {
+  max-height: 42vh;
+  overflow-y: scroll;
+}
+
+.single-user .repos .repo-item {
+  border: 1px solid #f8f8f8;
+  margin: 7px;
+  padding: 14px;
+}
+
+.loader {
+  margin: 0 auto;
+}
+
+.error {
+  background-color: rgba(26, 17, 16, 0.7);
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.error .error-modal {
+  background-color: #f8f8f8;
+  border: 3px solid #6a5acd;
+  border-radius: 42px;
+  margin: 180px auto;
+  padding: 21px;
+  text-align: center;
+  width: 280px;
+}
+
+.error .error-modal .error-logo {
+  color: red;
+  font-size: 70px;
+}
+
+.error .error-modal .error-text {
+  color: #1a1110;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 14px 0;
+}
+
+.error .error-modal .error-button {
+  background-color: #6a5acd;
+  border: none;
+  color: #f8f8f8;
+  cursor: pointer;
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  padding: 14px;
+}
+/*# sourceMappingURL=style.css.map */
